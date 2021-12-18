@@ -1,0 +1,9 @@
+// Styles for the homepage
+
+// import the global styles
+@import '../../globals';
+
+// example style
+.HomePage h1{
+    color: $google_blue; //color variable from globals
+}
