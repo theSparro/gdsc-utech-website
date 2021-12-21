@@ -125,7 +125,7 @@ h1{
 - Implement the following components
   - EventCard  - Joel Wisdom
   - Navbar (consider using bootstrap navbar) - Daryn Brown
-  - Footer - Garvain Campbell
+  - Footer - Matthew Samuels
   - PrimaryButton - Daryn Brown
 
 - Implement the following pages
