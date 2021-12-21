@@ -123,16 +123,16 @@ h1{
 ---
 ## TODO:
 - Implement the following components
-  - EventCard
-  - Navbar (consider using bootstrap navbar)
-  - Footer
-  - PrimaryButton
+  - EventCard  - Joel Wisdom
+  - Navbar (consider using bootstrap navbar) - Daryn Brown
+  - Footer - Garvain Campbell
+  - PrimaryButton - Daryn Brown
 
 - Implement the following pages
-  - HomePage
-  - EventPage
-  - RegistrationPage
-  - ProjectsPage
+  - HomePage - Shawn Grant
+  - EventPage - Joel Wisdom
+  - RegistrationPage - Garvain Campbell
+  - ProjectsPage - Jovel Miles
 
 - Setup a Firestore database for events and projects
 - Setup Firebase Hosting
