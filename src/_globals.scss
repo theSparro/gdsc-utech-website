@@ -15,6 +15,11 @@ $text_white: #FFFFFF;
     font-family: 'Google Sans';
     src: url(./fonts/googlesans-regular.woff) format('woff');
 }
+@font-face {
+    font-family: 'Google Sans';
+    src: url(./fonts/googlesans-bold.woff) format('woff');
+    font-weight: bold;
+}
 
 // BASE STYLES
 #root, html{
