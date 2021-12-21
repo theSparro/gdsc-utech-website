@@ -6,7 +6,7 @@ function EventPage() {
     // renders the page
     return (
         <div className='EventPage'>
-            <h1>This is the EventPage</h1>
+            <h1>Welcome to the EventPage</h1>
         </div>
     )
 }
