@@ -1,9 +1,81 @@
-// Styles for the homepage
-
 // import the global styles
 @import '../../globals';
 
-// example style
-.HomePage h1{
-    color: $google_blue; //color variable from globals
+.HomePage{
+    text-align: center;
+    height: 100%;
+    padding: 10px;
 }
+
+// header section
+.HomePage .cover-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90%;
+}
+
+.HomePage .hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    // styles for when the website is being displayed on mobile (media queries)
+    @media screen and (max-width: $mobile-size) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.HomePage .hero .left{
+    width: 100%;
+    text-align: right;
+
+    // styles for when the website is being displayed on mobile (media queries)
+    @media screen and (max-width: $mobile-size) {
+        text-align: center;
+    }
+}
+
+.HomePage .hero .right{
+    width: 100%;
+    text-align: center;
+}
+
+.HomePage .hero .left #hero-img{
+    width: 90%;
+
+    // styles for when the website is being displayed on mobile
+    @media screen and (max-width: $mobile-size) {
+        width: 70%;
+    }
+}
+
+.HomePage .hero .right #gdsc-logo{
+    width: 100px;
+    // styles for when the website is being displayed on mobile
+    @media screen and (max-width: $mobile-size) {
+        display: none;
+    }
+}
+
+.HomePage .hero .right h2{
+    color: $text_black;
+    font-weight: bold;
+}
+
+.HomePage .hero .right h4{
+    color: $text_gray;
+    font-weight: bold;
+}
+
+.HomePage #down-arr{
+    width: 60px;
+    opacity: 0.6;
+    margin-top: 5em;
+}
+// end of header section
+

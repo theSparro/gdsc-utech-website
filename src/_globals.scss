@@ -6,9 +6,13 @@ $google_blue: #4285F4;
 $google_green: #0F9D58;
 $google_yellow: #FBBC04;
 $google_red: #EA4335;
-$text_gray: #C8C8C8;
+$text_gray: #b9b9b9;
 $text_black: #000629;
 $text_white: #FFFFFF;
+
+// The Max screen size the website recognizes as a mobile device
+$mobile-size: 700px;
+// research responsive design and media queries
 
 // GOOGLE SANS FONT
 @font-face {
