@@ -29,15 +29,14 @@ $mobile-size: 700px;
 
 // BASE STYLES
 #root, html{
-    height: 100vh;
+    height: 100%;
     scroll-behavior: smooth; //makes internal links scroll instead of jump to the element
 }
 body {
-    margin: 0;
     height: 100%;
+    margin: 0;
     font-family: 'Google Sans', Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-    
