@@ -1,1 +1,17 @@
-@import '../../globals';
+@import "../../globals";
+
+.Navbar {
+  .navbar-brand {
+    color: black;
+    font-weight: bold;
+  }
+
+  .nav-link.active{
+    color: $google_blue !important;
+  }
+
+  .nav-link.unselected {
+    color: $text_gray !important;
+  }
+
+}
