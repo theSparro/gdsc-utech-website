@@ -29,6 +29,12 @@
     align-items: center;
     width: 80%;
     margin: auto;
+
+    @media screen and (max-width: $mobile-size) {
+        flex-direction: column;
+        width: 95%;
+    }
+
 }
 // Event box styling
 .EventPage .upcoming .event-box{
@@ -81,10 +87,21 @@
     width: 80%;
     margin: auto;
     text-align: left;
-
+    
+    .EventCard{
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+    }
+    // styling on hover
+    .EventCard:hover{
+        opacity: 1;
+        filter: alpha(opacity=100 );
+    }
     // styles for mobile
     @media screen and (max-width: $mobile-size) {
         text-align: center;
+        flex-direction: column;
+        width: 95%;
 
         .EventCard{
             margin: 10%;
