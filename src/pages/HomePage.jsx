@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import heroImage from '../images/team_hero.png'
 import gdscLogo from '../images/gdsc_logo.png'
 import downArrow from '../images/down_arrow.png'
+import PrimaryButton from '../components/PrimaryButton'
 // import the CSS
 import './styles/homepage.scss'
 
@@ -25,8 +26,7 @@ function HomePage() {
                         <h2>Google Developer Student Club</h2>
                         <h4>University of Technology, Jamaica</h4>
                         <br />
-                        {/** to be replaced with PrimaryButton component */}
-                        <button>Register</button>
+                        <PrimaryButton onClick={()=>console.log("test")} text="Register" color="blue"/>
                     </div>
                 </div>
 
@@ -62,7 +62,7 @@ function HomePage() {
             </div>
 
             <div className='cta'>
-                <button>Join The Club</button>
+                <PrimaryButton onClick={()=>console.log("test")} text="Join The Club" color="red"/>
                 <br /> <br />
                 <Link id='link' to={'/events'}>View Our Events</Link>
             </div>
