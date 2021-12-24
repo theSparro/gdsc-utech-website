@@ -5,14 +5,13 @@
     text-align: center;
     color: white;
     width: 250px;
-    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .EventCard img{
-    max-height: 100%;
+    max-height: auto;
     max-width: 100%;
 }
 
