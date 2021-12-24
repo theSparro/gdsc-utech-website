@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import EventCard from '../components/EventCard.jsx'
 import PrimaryButton from '../components/PrimaryButton.jsx'
 
@@ -40,11 +40,12 @@ function EventPage() {
             <section className='previous'>
                     <h2 className='section-head'>Previous Events</h2>
 
-                    <EventCard title="Intro To Machine Learning"/>
-                    <EventCard title="Intro To Firebase"/>
-                    <EventCard title="Design Thinking"/>
-                    <EventCard title="Career Talk"/>
-                    <EventCard title="Intro To GitHub"/>
+                    <EventCard title="Intro To Machine Learning" link="https://youtu.be/OYhFIx8EYpM"/>
+                    <EventCard title="Intro To GitHub" link="https://youtu.be/TuszwdwJwBY"/>
+                    <EventCard title="Intro To Firebase" link="https://youtu.be/RBuNQAmDDU0"/>
+                    <EventCard title="Intro To Flutter" link="https://youtu.be/JgsZDxuQLzY"/>
+                    <EventCard title="Design Thinking" link="https://youtu.be/OuXAgXLe8Hs"/>
+                    <EventCard title="Career Talk" link="https://youtu.be/aXnY375U6BI"/>
             </section>
 
             <div className='community'>

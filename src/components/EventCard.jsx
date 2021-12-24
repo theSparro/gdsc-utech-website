@@ -9,10 +9,12 @@ function EventCard(props) {
 
     return (
         <div className='EventCard'>
+            <a target="_blank" href={props.link}>
                 <span>
                     <img id="eventcard-img" src={eventCardImage} alt="" />
                     <h2 id="title">{props.title}</h2>
                 </span>
+            </a>
         </div>
     )
 }
