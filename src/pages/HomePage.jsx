@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import heroImage from '../images/team_hero.png'
 import gdscLogo from '../images/gdsc_logo.png'
 import downArrow from '../images/down_arrow.png'
@@ -33,9 +34,49 @@ function HomePage() {
                 <br />
                 <br />
 
-                <img src={downArrow} id='down-arr' alt="" />
+                <a href="#down-arr">
+                    <img src={downArrow} id='down-arr' alt="" />
+                </a>
+                    
             </div>
-            
+
+            <div className="about">
+                <h2 id='title'>About Us</h2>
+
+                <br />
+                <iframe src="https://www.youtube.com/embed/sYRGuDwVu-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <br />
+                <br />
+
+                <p id='text'>
+                    At GDSC UTech we aim to prepare students for the workforce in a practical and <br /> 
+                    engaging manner. With the guidance of Google advisors and experts, we aim to have <br /> 
+                    our student members bridge the gap between theory and practice and apply what <br /> 
+                    they learn as soon as possible. 
+                    <br />
+                    <br />
+                    We are bound by the value of creativity, diversity of character and thought, <br />
+                    and the drive to make a positive impact.
+                </p>
+            </div>
+
+            <div className='cta'>
+                <button>Join The Club</button>
+                <br /> <br />
+                <Link id='link' to={'/events'}>View Our Events</Link>
+            </div>
+
+            <div className='more'>
+                <h2 id='title'>Learn about <br /> Developer Student Clubs</h2>
+
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/earTjC0iSjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <br />
+            <br />
+            <br />
+
         </div>
     )
 }
