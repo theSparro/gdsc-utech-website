@@ -16,7 +16,7 @@ function EventPage() {
             <h1>Our Events</h1>
             <br />
             <section className='upcoming'>
-                <h2 className='section-head'>Upcoming</h2>
+                <h3 className='section-head'>Upcoming</h3>
                 <div className='event-box'>
                         <div className='left'>
                             <EventCard title="Intro to Machine Learning"/>
@@ -38,7 +38,7 @@ function EventPage() {
             </section>
 
             <section className='previous'>
-                    <h2 className='section-head'>Previous Events</h2>
+                    <h3 className='section-head'>Previous Events</h3>
 
                     <EventCard title="Intro To Machine Learning" link="https://youtu.be/OYhFIx8EYpM"/>
                     <EventCard title="Intro To GitHub" link="https://youtu.be/TuszwdwJwBY"/>

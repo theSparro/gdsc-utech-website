@@ -4,7 +4,7 @@
     position: relative;
     text-align: center;
     color: white;
-    width: 250px;
+    width: 15em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,7 @@
 
 .EventCard #title{
     font-weight: bold;
+    font-size: 1.5em;
     position: absolute;
     top: 50%;
     left: 50%;
