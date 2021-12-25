@@ -1,6 +1,10 @@
 @import "../../globals";
 
 .Navbar {
+  nav{
+    background: white !important;
+  }
+
   .navbar-brand {
     color: black;
     font-weight: bold;
@@ -14,4 +18,11 @@
     color: $text_gray !important;
   }
 
+  .navbar-toggler{
+    border: none;
+  }
+
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
 }
