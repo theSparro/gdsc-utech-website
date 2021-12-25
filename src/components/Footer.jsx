@@ -1,18 +1,16 @@
 import React from 'react'
 import './styles/footer.scss'
-<<<<<<< HEAD
 import logo from '../images/gdsc_logo.png'
-=======
->>>>>>> bdf693e3b4f80dcbc0641db9bf84837e6a451833
 
 function Footer() {
     return (
         <div className='Footer'>
-<<<<<<< HEAD
-            <img src= {logo} alt="" width= '35px' height= '50px'/>
-=======
-            <h1>My </h1>
->>>>>>> bdf693e3b4f80dcbc0641db9bf84837e6a451833
+            <img src= {logo} alt="" width= '40px'/>
+            <p>Google Developer Student Clubs</p>
+            <a href="https://www.instagram.com/gdsc.utechja/" target='_blank'>Instargram</a>
+            <a href="https://www.youtube.com/channel/UC0cRuVUPTC15W3GXAZ79V2Q" target='_blank'>YouTube</a>
+            <a href="https://github.com/gdsc-utech" target='_blank'>GitHub</a>
+            <a href="https://gdsc.community.dev/university-of-technology/" target='_blank'>Community</a>
         </div>
     )
 }
