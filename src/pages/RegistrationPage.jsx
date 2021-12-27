@@ -10,29 +10,48 @@ function RegistrationPage() {
     // renders the page
     return (
        <div className="RegistrationPage">
-           {/* Heading of the page */}
-           <h1>How to Register</h1>
+           <h2>How to Register</h2>
             <div className="sub">
                 To join the club, Please complete the following steps
             </div>
+
+
             <div className="subHead">
-                 <h2>Join Community Platform</h2>
+                <h3>
+                     <span className='dot'><i className="bi bi-circle-fill"></i>
+                     </span>Join Community Platform
+                </h3>
+
+                 <p id='text'>
+                    Visit the link below and click the "Join" to become a member and be notified of our events.
+                 </p>
+
+                 <div className='link'><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukiMgRDsVNczSyKYMNEf78uc3821sDreEzkTDfoxirf5GcA/viewform">Click Here</a> 
+                 </div>      
             </div>
-            <div className="p">
-                Visit the link below and click the "Join" to become a member and be notified of our events.
-            </div>
-            <div className='link'><a href="#">Click Here</a></div>
-            <div className='arrow'><img src={downArrow} id='down-arr' alt="" width={80}/></div>
+
+            <div className='arrow'><img src={downArrow} id='down-arr' alt="" width={50}/></div>
+
             <div className="subHead2">
-                <h2>Fill Out Our Survey</h2>
-            </div>
-            <div className="p">
-                Complete the form below. You may join our Whatsapp group with the link provided on submission
-            </div>
+                <h3>
+                    <span className='dot'><i className="bi bi-circle-fill"></i>
+                    </span> Fill Out Our Survey
+                </h3>
+                <p id='text'>
+                     Complete the form below. You may join our Whatsapp group with the link provided on submission
+                </p>
             <div className="link"><a href="#">Fill Out Form</a></div>
-            <div className='arrow'><img src={downArrow} id='down-arr' alt="" width={80}/></div>
-            <div className="subHead2">
-                <h2>Welcome To The Party</h2>
+            </div>
+            
+            
+            <div className='arrow'><img src={downArrow} id='down-arr' alt="" width={50}/></div>
+            <br />
+
+            <div className="subHead3">
+                <h3>
+                    <span className='dot'>
+                        <i className="bi bi-circle-fill"></i> 
+                    </span>Welcome To The Party</h3>
             </div>
        </div>
     )
