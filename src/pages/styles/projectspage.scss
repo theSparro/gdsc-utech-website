@@ -1,0 +1,219 @@
+// import the global styles
+@import '../../globals';
+
+.projects-header-text-blue {
+    color: #4285F4 !important;
+}
+
+.project-page-header {
+    font-weight: 1000;
+    color: #000000 !important;
+}
+
+.resource-text {
+    font-weight: 1000;
+    color: #848484 !important;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.resource {
+    font-size: 20px;
+    margin-bottom: 80px !important;
+    align-items: center;
+}
+
+.resource-img {
+    height: 150px;
+    display:block;
+    margin:10px auto 0 auto;
+}
+
+.circle {
+   border-radius: 25px;
+   background: #4285F482;
+    padding: 5px 15px;
+    margin-right: 20px;
+    max-width: 28%;
+    text-align: center;
+    color:white;
+    display: inline;
+}
+
+.center {
+    align-items: center;
+}
+
+.row {
+    margin-top: 80px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 370px;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin-right: 40px;
+  margin-bottom: 40px;
+  border: 1px solid #0F9D58;
+  border-radius: 15px;
+
+}
+
+.column-content 
+{
+    margin: 20px auto 0 auto;
+    display: table;
+}
+
+.circle-center
+{
+    margin: 0 auto 0 auto;
+    display: table;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: $mobile-size) {
+  .column {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    display: table;
+
+  }
+
+}
+
+.ProjectPage {
+    text-align: center;
+    margin-bottom: 80px;
+    
+    h1{
+        color: $google_green;
+        text-align: center;
+    }
+
+    .section-head{
+        text-align: left;
+        font-weight:normal;
+        color: $text_gray;
+        text-align: left;
+    }
+
+    .ProjectCard{
+        display: inline-block;
+        margin: 5%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+    }
+}
+
+// Upcoming projects section
+.ProjectPage .upcoming{
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+    @media screen and (max-width: $mobile-size) {
+        flex-direction: column;
+        width: 95%;
+    }
+
+}
+// Project box styling
+.ProjectPage .upcoming .project-box{
+    border: 1px solid $google_green;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-width: 250px;
+
+    // styles for mobile
+    @media screen and (max-width: $mobile-size) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left{
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+        margin: 2.5%;
+        margin-right: 0%;
+    }
+
+    .right{
+        flex: 1;
+        text-align: center;
+        margin: 5%;
+
+        h2{
+            text-align: center;
+            font-weight: bold;
+        }
+
+        h4{
+            color: $google_green;
+            font-weight: bold;
+        }
+
+        p{
+            color: $text_gray;
+        }
+    }
+}
+
+// Previous projects section
+.ProjectPage .previous{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    
+    .ProjectCard{
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+    }
+    // styling on hover
+    .ProjectCard:hover{
+        opacity: 1;
+        filter: alpha(opacity=100 );
+    }
+    // styles for mobile
+    @media screen and (max-width: $mobile-size) {
+        text-align: center;
+        flex-direction: column;
+        width: 95%;
+
+        .ProjectCard{
+            margin: 10%;
+            margin-bottom: 0%;
+        }
+
+    }
+
+    
+}
+
+.ProjectPage .community{
+    background: $background_gray;
+    padding: 30px;
+    margin-top: 100px;
+
+    #gdsc-page{
+        color: $google_green;
+        text-align: center;
+    }
+
+}
+
