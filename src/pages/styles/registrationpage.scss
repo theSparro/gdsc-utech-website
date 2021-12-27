@@ -1,0 +1,66 @@
+//  Importing global Scss styles
+ @import '../../globals';
+
+//  Heading of the page
+.RegistrationPage h1{
+    text-align: center;
+    font-weight: bold;
+    color: $google_green;
+    font-size: 44px;
+}
+// Subheading of the page
+.sub {
+    padding-top: 15px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: $text_black;
+    // Style for when the subheading is viewed on mobile
+    @media screen and (max-width: $mobile-size) {
+        margin: auto;
+        padding: 10px;
+       }
+    
+}
+
+// Subheading for the first step 
+.subHead h2{
+    padding-top: 5%;
+    text-align: center;
+    font-size: 25px;
+    color: $google_blue;
+    font-weight: bold;
+}
+
+// Paragraph for each step
+.p{
+    padding-top: 1.2%;
+   display: flex;
+   margin: 20px auto;
+   width: 35%;
+   text-align: center;
+   font-size: 24px;
+//    Style for when the paragraph is viewed on mobile
+   @media screen and (max-width: $mobile-size) {
+    width: 70%;
+   }
+}
+
+.link{
+    text-align: center;
+    font-size: 25px;
+}
+
+.arrow{
+    padding: 2%;
+    text-align: center;
+}
+
+// Styling for the second and third subheading
+.subHead2 h2{
+    margin: 2%;
+    text-align: center;
+    font-size: 25px;
+    color: $google_blue;
+    font-weight: bold;
+}
