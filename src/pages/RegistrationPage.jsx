@@ -26,7 +26,7 @@ function RegistrationPage() {
                     Visit the link below and click the "Join" to become a member and be notified of our events.
                  </p>
 
-                 <div className='link'><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukiMgRDsVNczSyKYMNEf78uc3821sDreEzkTDfoxirf5GcA/viewform">Click Here</a> 
+                 <div className='link'><a target='_blank' rel='noopener' href="https://gdsc.community.dev/university-of-technology/">Click Here</a> 
                  </div>      
             </div>
 
@@ -40,7 +40,7 @@ function RegistrationPage() {
                 <p id='text'>
                      Complete the form below. You may join our Whatsapp group with the link provided on submission
                 </p>
-            <div className="link"><a href="#">Fill Out Form</a></div>
+            <div className="link"><a target='_blank' rel='noopener' href="https://docs.google.com/forms/d/e/1FAIpQLSdukiMgRDsVNczSyKYMNEf78uc3821sDreEzkTDfoxirf5GcA/viewform">Fill Out Form</a></div>
             </div>
             
             

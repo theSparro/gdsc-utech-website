@@ -1,31 +1,32 @@
 //  Importing global Scss styles
  @import '../../globals';
 
- .RegistrationPage{
-    text-align: center;
-    min-height: 100%;
-}
-
 //  Heading of the page
-.RegistrationPage h2{
-    padding-top: 50px;
-    text-align: center;
-    font-weight: bold;
-    color: $google_green;
+.RegistrationPage {
+
+    h2{
+        padding-top: 50px;
+        text-align: center;
+        font-weight: bold;
+        color: $google_green;
+
 }
-// Subheading of the page
-.sub {
-    padding-top: 15px;
-    text-align: center;
-    font-weight: normal;
-    color: $text_black;
-    // Style for when the subheading is viewed on mobile
-    @media screen and (max-width: $mobile-size) {
-        margin: auto;
-        padding: 10px;
-       }
+    // Subheading of the page
+    .sub {
+        padding-top: 15px;
+        text-align: center;
+        font-weight: normal;
+        color: $text_black;
+        // Style for when the subheading is viewed on mobile
+        @media screen and (max-width: $mobile-size) {
+            margin: auto;
+            padding: 10px;
+        }
     
 }
+    }
+    
+
 
 // Subheading for the first step 
 .subHead h3{
