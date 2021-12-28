@@ -23,26 +23,28 @@
             padding: 10px;
         }
     
-}
     }
+}
     
-
-
 // Subheading for the first step 
-.subHead h3{
+.RegistrationPage .subHead {
     padding-top: 5%;
     text-align: center;
-    font-size: 25px;
     color: $google_blue;
+    font-weight: bold;
+    
+}
+
+.RegistrationPage .subHead h3{
     font-weight: bold;
 }
 
 // Paragraph for each step
-#text{
-    padding-top: 1.2%;
+.RegistrationPage  #text{
    display: flex;
    margin: 20px auto;
    width: 25%;
+   font-weight: normal;
    text-align: center;
    color: $text_gray;
 //    Style for when the paragraph is viewed on mobile
@@ -51,38 +53,25 @@
    }
 }
 
-.link{
+.RegistrationPage a{
     text-align: center;
-}
-
-.arrow{
-    padding: 5%;
-    text-align: center;
-    opacity: 0.7;
-}
-
-// Styling for the second and third subheading
-.subHead2 h3{
-    margin: 2%;
-    text-align: center;
-    font-size: 25px;
-    color: $google_blue;
     font-weight: bold;
 }
 
-.dot{
+.RegistrationPage #down-arr{
+    padding-top: 20px;
+   text-align: center;
+   opacity: 0.7;
+}
+
+.RegistrationPage #dot{
     padding-right: 15px;
 }
 
-.subHead img{
-    text-align: center;
+.RegistrationPage #emoji{
+    width: 32px;
+    margin: 5px;
 }
 
-.subHead3 h3{
-    padding-bottom: 5%;
-    text-align: center;
-    font-size: 25px;
-    color: $google_blue;
-    font-weight: bold;
-}
+
 
