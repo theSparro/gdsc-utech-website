@@ -1,0 +1,30 @@
+@import '../../globals';
+
+.EventCard{
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.EventCard a{
+    color: white;
+}
+
+.EventCard img{
+    max-height: auto;
+    max-width: 100%;
+}
+
+.EventCard #title{
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex: content;
+}

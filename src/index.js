@@ -7,10 +7,12 @@ import $ from 'jquery';
 import './_globals.scss';
 
 // include the website pages and components
+import ScrollToTop from './helpers/ScrollToTop'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import EventPage from './pages/EventPage';
+import ProjectsPage from './pages/ProjectsPage';
 import RegistrationPage from './pages/RegistrationPage';
 
 // workaround to ensure jquery is accessible by Bootstrap
@@ -28,12 +30,13 @@ ReactDOM.render(
      */}
     
     <BrowserRouter>
+      <ScrollToTop/>
       <Navbar /> 
       
       <Routes>
         <Route path='/' element={ <HomePage/> }/>
         <Route path='/events' element={ <EventPage/> }/>
-        <Route path='/projects' element={ <HomePage/> }/>
+        <Route path='/projects' element={ <ProjectsPage/> }/>
         <Route path='/register' element={ <RegistrationPage/> }/>
       </Routes>
 

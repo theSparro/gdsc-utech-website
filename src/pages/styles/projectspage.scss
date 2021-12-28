@@ -1,0 +1,102 @@
+// import the global styles
+@import '../../globals';
+
+// header section
+.ProjectsPage{
+
+    .cover-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+    }
+    
+    .hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    
+        // styles for when the website is being displayed on mobile (media queries)
+        @media screen and (max-width: $mobile-size) {
+            flex-direction: column;
+            width: 100%;
+        }
+    
+       .left{
+            width: 100%;
+            text-align: right;
+    
+            // styles for when the website is being displayed on mobile (media queries)
+            @media screen and (max-width: $mobile-size) {
+                text-align: center;
+            }
+        }
+    
+        .right{
+            width: 100%;
+            text-align: center;
+        }
+        
+        .left #hero-img{
+            width: 80%;
+    
+            // styles for when the website is being displayed on mobile
+            @media screen and (max-width: $mobile-size) {
+                width: 50%;
+            }
+        }
+        
+        .right h2{
+            color: $google_blue;
+            font-weight: bold;
+        }
+    
+        .right h4{
+            color: $text_gray;
+        }
+    }
+
+    .projects{
+        width: 80%;
+        margin: 0 auto 40px auto;
+        text-align: left;
+        
+        #title{
+            color: $text_black;
+            font-weight: bold;
+            max-lines: 2;
+        }
+
+        .list{
+            display: flex;
+            justify-content: baseline;
+            align-items: center;
+            overflow-x: auto;
+        }
+
+        .list .bi{
+            font-size: 30pt;
+            color: $background_gray;
+        }
+        
+    }
+
+    .resources{
+        width: 80%;
+        margin: 0 auto 40px auto;
+        text-align: left;
+        
+        #title{
+            color: $text_black;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+
+
