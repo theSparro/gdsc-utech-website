@@ -7,6 +7,7 @@ import $ from 'jquery';
 import './_globals.scss';
 
 // include the website pages and components
+import ScrollToTop from './helpers/ScrollToTop'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -29,6 +30,7 @@ ReactDOM.render(
      */}
     
     <BrowserRouter>
+      <ScrollToTop/>
       <Navbar /> 
       
       <Routes>
