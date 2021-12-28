@@ -1,178 +1,99 @@
 // import the global styles
 @import '../../globals';
 
-.ProjectsDivType1{
-    text-align: center;
-    min-height: 100%;
-}
-
 // header section
-.ProjectsDivType1 .cover-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+.ProjectsPage{
 
-.ProjectsDivType1 .hero{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-
-    // styles for when the website is being displayed on mobile (media queries)
-    @media screen and (max-width: $mobile-size) {
+    .cover-section{
+        display: flex;
         flex-direction: column;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
     }
-
-   .left{
-        width: 100%;
-        text-align: right;
-
+    
+    .hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    
         // styles for when the website is being displayed on mobile (media queries)
         @media screen and (max-width: $mobile-size) {
+            flex-direction: column;
+            width: 100%;
+        }
+    
+       .left{
+            width: 100%;
+            text-align: right;
+    
+            // styles for when the website is being displayed on mobile (media queries)
+            @media screen and (max-width: $mobile-size) {
+                text-align: center;
+            }
+        }
+    
+        .right{
+            width: 100%;
             text-align: center;
         }
-    }
-
-    .right{
-        width: 100%;
-        text-align: center;
-    }
+        
+        .left #hero-img{
+            width: 80%;
     
-    .left #hero-img{
-        width: 90%;
-
-        // styles for when the website is being displayed on mobile
-        @media screen and (max-width: $mobile-size) {
-            width: 70%;
+            // styles for when the website is being displayed on mobile
+            @media screen and (max-width: $mobile-size) {
+                width: 50%;
+            }
+        }
+        
+        .right h2{
+            color: $google_blue;
+            font-weight: bold;
+        }
+    
+        .right h4{
+            color: $text_gray;
         }
     }
-    
-    .right #gdsc-logo{
-        width: 100px;
-        // styles for when the website is being displayed on mobile
-        @media screen and (max-width: $mobile-size) {
-            display: none;
+
+    .projects{
+        width: 80%;
+        margin: 0 auto 40px auto;
+        text-align: left;
+        
+        #title{
+            color: $text_black;
+            font-weight: bold;
+            max-lines: 2;
+        }
+
+        .list{
+            display: flex;
+            justify-content: baseline;
+            align-items: center;
+            overflow-x: auto;
+        }
+
+        .list .bi{
+            font-size: 30pt;
+            color: $background_gray;
+        }
+        
+    }
+
+    .resources{
+        width: 80%;
+        margin: 0 auto 40px auto;
+        text-align: left;
+        
+        #title{
+            color: $text_black;
+            font-weight: bold;
         }
     }
-    
-    .right h2{
-        color: $google_blue;
-        font-weight: bold;
-    }
-
-    .right h4{
-        color: $text_gray;
-        font-weight: bold;
-    }
-}
-
-.ProjectsDivType2 {
-    width: 80%;
-    margin: 0 auto 40px auto;
-    text-align: left;
-    
-    h4{
-        color: $text_black;
-        font-weight: bold;
-    }
-    // styles for mobile
-    @media screen and (max-width: $mobile-size) {
-        text-align: center;
-        flex-direction: column;
-        width: 95%;
-    }
-}
-
-.resource-text {
-    font-weight: 1000;
-    color: #848484 !important;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.resource {
-    font-size: 20px;
-    margin-bottom: 80px !important;
-    align-items: center;
-}
-
-.resource-img {
-    height: 150px;
-    display:block;
-    margin:10px auto 0 auto;
-}
-
-// fix img dimension problem to get matching img size
-.resource-img-special1 {
-    height :160px !important;
-}
-
-.rounded-corner-box {
-   border-radius: 25px;
-   background: #4285F482;
-    padding: 5px 15px;
-    margin-right: 20px;
-    max-width: 28%;
-    text-align: center;
-    color:white;
-    display: inline;
-}
-
-.center {
-    align-items: center;
-}
-
-.row {
-    margin-top: 80px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 370px;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-  margin-right: 40px;
-  margin-bottom: 40px;
-  border: 1px solid #0F9D58;
-  border-radius: 15px;
-
-}
-
-.column-content 
-{
-    margin: 20px auto 0 auto;
-    display: table;
-}
-
-.technologies
-{
-    margin: 0 auto 0 auto;
-    display: table;
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: $mobile-size) {
-  .column {
-    width: 80%;
-    margin: 0 auto 20px auto;
-    display: table;
-
-  }
-
 }
 
 
