@@ -8,11 +8,7 @@ function Navbar() {
         <div className='Navbar'>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
-                    <NavLink
-                        to="/"
-                        
-                        className="navbar-brand"                       
-                        >
+                    <NavLink to="/" className="navbar-brand">
                         <img className="gdsc-logo" src={gdscLogo} alt="logo" width = "50"/>    
                         <span> GDSC UTECH</span>
                     </NavLink>
