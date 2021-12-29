@@ -2,65 +2,76 @@
  @import '../../globals';
 
 //  Heading of the page
-.RegistrationPage h1{
-    text-align: center;
-    font-weight: bold;
-    color: $google_green;
-    font-size: 44px;
+.RegistrationPage {
+
+    h2{
+        padding-top: 50px;
+        text-align: center;
+        font-weight: bold;
+        color: $google_green;
+
 }
-// Subheading of the page
-.sub {
-    padding-top: 15px;
+    // Subheading of the page
+    .sub {
+        padding-top: 15px;
+        text-align: center;
+        font-weight: normal;
+        color: $text_black;
+        // Style for when the subheading is viewed on mobile
+        @media screen and (max-width: $mobile-size) {
+            margin: auto;
+            padding: 10px;
+        }
+    
+    }
+}
+    
+// Subheading for the first step 
+.RegistrationPage .subHead {
+    padding-top: 5%;
     text-align: center;
-    font-weight: normal;
-    font-size: 20px;
-    color: $text_black;
-    // Style for when the subheading is viewed on mobile
-    @media screen and (max-width: $mobile-size) {
-        margin: auto;
-        padding: 10px;
-       }
+    color: $google_blue;
+    font-weight: bold;
     
 }
 
-// Subheading for the first step 
-.subHead h2{
-    padding-top: 5%;
-    text-align: center;
-    font-size: 25px;
-    color: $google_blue;
+.RegistrationPage .subHead h3{
     font-weight: bold;
 }
 
 // Paragraph for each step
-.p{
-    padding-top: 1.2%;
+.RegistrationPage  #text{
    display: flex;
    margin: 20px auto;
-   width: 35%;
+   width: 25%;
+   font-weight: normal;
    text-align: center;
-   font-size: 24px;
+   color: $text_gray;
 //    Style for when the paragraph is viewed on mobile
    @media screen and (max-width: $mobile-size) {
     width: 70%;
    }
 }
 
-.link{
+.RegistrationPage a{
     text-align: center;
-    font-size: 25px;
-}
-
-.arrow{
-    padding: 2%;
-    text-align: center;
-}
-
-// Styling for the second and third subheading
-.subHead2 h2{
-    margin: 2%;
-    text-align: center;
-    font-size: 25px;
-    color: $google_blue;
     font-weight: bold;
 }
+
+.RegistrationPage #down-arr{
+    padding-top: 20px;
+   text-align: center;
+   opacity: 0.7;
+}
+
+.RegistrationPage #dot{
+    padding-right: 15px;
+}
+
+.RegistrationPage #emoji{
+    width: 32px;
+    margin: 5px;
+}
+
+
+
