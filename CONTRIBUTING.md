@@ -122,20 +122,7 @@ h1{
 
 ---
 ## TODO:
-- Implement the following components
-  - EventCard  - Joel Wisdom
-  - Navbar (consider using bootstrap navbar) - Daryn Brown
-  - Footer - Matthew Samuels
-  - PrimaryButton - Daryn Brown
-
-- Implement the following pages
-  - HomePage - Shawn Grant
-  - EventPage - Joel Wisdom
-  - RegistrationPage - Garvain Campbell
-  - ProjectsPage - Jovel Miles
-
 - Setup a Firestore database for events and projects
-- Setup Firebase Hosting
 
 
 ---
