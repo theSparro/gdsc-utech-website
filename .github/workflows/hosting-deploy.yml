@@ -6,7 +6,8 @@ on:
 
 jobs:
   build_and_deploy:
-
+    # Only run on the upstream repo, not forks
+    if: github.repository == 'gdsc-utech/gdsc-utech-website'
     runs-on: ubuntu-latest
 
     strategy:
