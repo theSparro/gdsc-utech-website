@@ -15,23 +15,19 @@ function RegistrationPage() {
             <div className="sub">
                 To join the club, Please complete the following steps
             </div>
- 
 
             <div className="subHead">
                 <h3>
-                     <i id='dot' className="bi bi-circle-fill"></i>
-                     Join Community Platform
+                    <i id='dot' className="bi bi-circle-fill"></i> Join Community Platform
                 </h3>
-                 <p id='text'>
+                <p id='text'>
                     Visit the link below and click the "Join" to become a member and be notified of our events.
-                 </p>
+                </p>
 
-                 <a target='_blank' rel='noopener' href="https://gdsc.community.dev/university-of-technology/">Click Here</a> 
+                <a target='_blank' rel='noreferrer' href="https://gdsc.community.dev/university-of-technology/">Click Here</a> 
 
                 <br />
-
-                    <img src={downArrow} id='down-arr' alt="" width={50}/>
-                
+                <img src={downArrow} id='down-arr' alt="" width={50}/> 
             </div>
 
             <div className="subHead">
@@ -42,12 +38,9 @@ function RegistrationPage() {
                 <p id='text'>
                      Complete the form below. You may join our Whatsapp group with the link provided on submission
                 </p>
-                 <a target='_blank' rel='noopener' href="https://docs.google.com/forms/d/e/1FAIpQLSdukiMgRDsVNczSyKYMNEf78uc3821sDreEzkTDfoxirf5GcA/viewform">Fill Out Form</a>
-
-                 <br />
-
-                    <img src={downArrow} id='down-arr' alt="" width={50}/>
-                
+                <a target='_blank' rel='noreferrer' href="https://docs.google.com/forms/d/e/1FAIpQLSdI9xIZ6t1UGiBGYq9mjP57nivOSz-GKazf7kHHMwxfgJo3Xw/viewform?usp=sf_link">Fill Out Form</a>
+                <br />
+                <img src={downArrow} id='down-arr' alt="" width={50}/>
             </div>
             
             <br />
