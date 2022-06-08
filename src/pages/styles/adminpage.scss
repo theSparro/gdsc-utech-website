@@ -1,0 +1,35 @@
+// import the global styles
+@import '../../globals';
+
+.AdminPage{
+    padding: 20px;
+
+    .restricted{
+        background: $google_red;
+        color: white;
+        font-weight: bold;
+        padding: 5px 10px;
+    }
+
+    #title{
+        color: $google_blue;
+    }
+
+    #line{
+        background-color: $google_blue;
+        height: 2px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login{
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        width: 40%;
+    }
+}
