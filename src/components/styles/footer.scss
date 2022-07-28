@@ -1,19 +1,19 @@
 @import '../../globals';
 
-.Footer{
-    bottom: 0;
-    padding: 5px;
-    text-align: center;
-    border-top: 1px solid $background_gray;   
+.Footer {
+	bottom: 0;
+	padding: 5px;
+	text-align: center;
+	border-top: 1px solid $background_gray;
 }
 
-.Footer p{
-    color: $text_gray;
-    margin-bottom: 1px;
+.Footer p {
+	color: $text_gray;
+	margin-bottom: 1px;
 }
 
-.Footer a{
-    padding-right: 15px;
-    text-decoration: none;
-    color: $text_gray;
+.Footer a {
+	padding-right: 15px;
+	text-decoration: none;
+	color: $text_gray;
 }
