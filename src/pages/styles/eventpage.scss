@@ -2,125 +2,132 @@
 @import '../../globals';
 
 .EventPage {
-    text-align: center;
-    
-    h1{
-        color: $google_green;
-        text-align: center;
-    }
+	text-align: center;
 
-    .section-head{
-        text-align: left;
-        font-weight:normal;
-        color: $text_gray;
-        text-align: left;
-    }
+	h1 {
+		color: $google_green;
+		text-align: center;
+	}
 
-    .EventCard{
-        display: inline-block;
-        margin: 5%;
-        margin-left: 0%;
-        margin-bottom: 0%;
-    }
+	.section-head {
+		text-align: left;
+		font-weight: normal;
+		color: $text_gray;
+		text-align: left;
+	}
+
+	.EventCard {
+		display: inline-block;
+		margin: 5%;
+		margin-left: 0%;
+		margin-bottom: 0%;
+	}
 }
 
 // Upcoming events section
-.EventPage .upcoming{
-    align-items: center;
-    width: 80%;
-    margin: auto;
+.EventPage .upcoming {
+	align-items: center;
+	width: 80vw;
+	margin: auto;
 
-    @media screen and (max-width: $mobile-size) {
-        flex-direction: column;
-        width: 95%;
-    }
+	// @media screen and (max-width: $mobile-size) {
+	// 	flex-direction: column;
+	// 	width: 95%;
+	// }
 
+	.list{
+		display: flex;
+		overflow: auto;
+
+		@media screen and (max-width: $mobile-size) {
+			flex-direction: column;
+		}
+	}
 }
 // Event box styling
-.EventPage .upcoming .event-box{
-    border: 1px solid $google_green;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    min-width: 250px;
+.EventPage .upcoming .event-box {
+	border: 1px solid $google_green;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-width: 45em;
+	margin-right: 1em;
 
-    // styles for mobile
-    @media screen and (max-width: $mobile-size) {
-        flex-direction: column;
-        width: 100%;
-    }
+	// styles for mobile
+	@media screen and (max-width: $mobile-size) {
+		flex-direction: column;
+		min-width: 0;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 1em;
+	}
 
-    .left{
-        flex: 1;
-        justify-content: center;
-        text-align: center;
-        margin: 2.5%;
-        margin-right: 0%;
-    }
+	.left {
+		flex: 1;
+		justify-content: center;
+		text-align: center;
+		margin: 2.5%;
+		margin-right: 0%;
+	}
 
-    .right{
-        flex: 1;
-        text-align: center;
-        margin: 5%;
+	.right {
+		flex: 1;
+		text-align: center;
+		margin: 5%;
 
-        h2{
-            text-align: center;
-            font-weight: bold;
-        }
+		h2 {
+			text-align: center;
+			font-weight: bold;
+		}
 
-        h4{
-            color: $google_green;
-            font-weight: bold;
-        }
+		h4 {
+			color: $google_green;
+			font-weight: bold;
+		}
 
-        p{
-            color: $text_gray;
-        }
-    }
+		p {
+			color: $text_gray;
+		}
+	}
 }
 
 // Previous events section
-.EventPage .previous{
-    width: 80%;
-    margin: auto;
-    text-align: left;
-    
-    .EventCard{
-        opacity: 0.4;
-        filter: alpha(opacity=40);
-    }
-    // styling on hover
-    .EventCard:hover{
-        opacity: 1;
-        filter: alpha(opacity=100 );
-    }
-    // styles for mobile
-    @media screen and (max-width: $mobile-size) {
-        text-align: center;
-        flex-direction: column;
-        width: 95%;
+.EventPage .previous {
+	width: 80%;
+	margin: auto;
+	text-align: left;
 
-        .EventCard{
-            margin: 10%;
-            margin-bottom: 0%;
-        }
+	.EventCard {
+		opacity: 0.4;
+		filter: alpha(opacity=40);
+	}
+	// styling on hover
+	.EventCard:hover {
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	// styles for mobile
+	@media screen and (max-width: $mobile-size) {
+		text-align: center;
+		flex-direction: column;
+		width: 95%;
 
-    }
-
-    
+		.EventCard {
+			margin: 10%;
+			margin-bottom: 0%;
+		}
+	}
 }
 
-.EventPage .community{
-    background: $background_gray;
-    padding: 30px;
-    margin-top: 100px;
+.EventPage .community {
+	background: $background_gray;
+	padding: 30px;
+	margin-top: 100px;
 
-    #gdsc-page{
-        color: $google_green;
-        text-align: center;
-    }
-
+	#gdsc-page {
+		color: $google_green;
+		text-align: center;
+	}
 }

@@ -1,6 +1,8 @@
 # GDSC Utech website
 
-Created using [ReactJs](https://github.com/facebook/create-react-app).
+Official website for the Developer Student Club at Utech, JA.
+
+View the site at [https://cursortech.club](https://cursortech.club)
 
 ## Dev Commands
 

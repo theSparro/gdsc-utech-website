@@ -7,7 +7,6 @@ import './styles/registrationpage.scss'
 
 // functional component
 function RegistrationPage() {
-
     // renders the page
     return (
        <div className="RegistrationPage">
@@ -45,16 +44,17 @@ function RegistrationPage() {
             
             <br />
 
-            <div className="subHead">
-                <h3>
-                <i id='dot' className="bi bi-circle-fill"></i>
-                    Welcome To The Party <img id='emoji' src={emoji} alt="" /></h3> 
-            </div>
+			<div className="subHead">
+				<h3>
+					<i id="dot" className="bi bi-circle-fill"></i>
+					Welcome To The Party <img id="emoji" src={emoji} alt="" />
+				</h3>
+			</div>
 
-            <br />
-            <br />
-       </div>
-    )
+			<br />
+			<br />
+		</div>
+	)
 }
 
 export default RegistrationPage

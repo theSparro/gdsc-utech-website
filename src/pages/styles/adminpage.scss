@@ -1,0 +1,86 @@
+// import the global styles
+@import '../../globals';
+
+.AdminPage {
+	padding: 20px;
+
+	.nav-link {
+		color: rgb(97, 97, 97);
+	}
+	.nav-link.active {
+		color: $google_blue;
+		border-color: black;
+		border-bottom-color: white;
+	}
+	.nav-link:hover {
+		color: $google_blue;
+		border-color: rgb(124, 124, 124);
+	}
+	.nav-tabs {
+		border-bottom: 1px solid #000000;
+		margin-bottom: 0 !important;
+	}
+	.tab-content {
+		padding: 20px;
+		border: 1px solid #000000;
+		border-top: none;
+		margin-bottom: 50px;
+	}
+
+	.restricted {
+		background: $google_red;
+		color: white;
+		font-weight: bold;
+		padding: 5px 10px;
+	}
+
+	#title {
+		color: $google_blue;
+	}
+
+	#line {
+		background-color: $google_blue;
+		height: 2px;
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.login {
+		border: 1px solid black;
+		border-radius: 10px;
+		padding: 20px;
+		width: 40%;
+	}
+
+	.edit-btn {
+		background: none;
+		color: $google_blue;
+		margin-right: 10px;
+		border: none;
+	}
+	.del-btn {
+		background: none;
+		color: $google_red;
+		border: none;
+	}
+
+	.edit-btn:hover,
+	.del-btn:hover {
+		background: rgb(210, 210, 210);
+	}
+
+	.event-tile {
+		border: 1px solid gray;
+		border-radius: 10px;
+		padding: 5px 20px;
+		margin-bottom: 20px;
+
+		p {
+			margin: 0;
+		}
+	}
+}

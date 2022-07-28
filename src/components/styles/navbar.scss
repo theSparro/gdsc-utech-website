@@ -1,28 +1,28 @@
-@import "../../globals";
+@import '../../globals';
 
 .Navbar {
-  nav{
-    background: white !important;
-  }
+	nav {
+		background: white !important;
+	}
 
-  .navbar-brand {
-    color: black;
-    font-weight: bold;
-  }
+	.navbar-brand {
+		color: black;
+		font-weight: bold;
+	}
 
-  .nav-link.active{
-    color: $google_blue !important;
-  }
+	.nav-link.active {
+		color: $google_blue !important;
+	}
 
-  .nav-link.unselected {
-    color: $text_gray !important;
-  }
+	.nav-link.unselected {
+		color: $text_gray !important;
+	}
 
-  .navbar-toggler{
-    border: none;
-  }
+	.navbar-toggler {
+		border: none;
+	}
 
-  .navbar-toggler:focus{
-    box-shadow: none;
-  }
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
 }
