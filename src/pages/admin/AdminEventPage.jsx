@@ -5,10 +5,12 @@ import {
 	collection,
 	getDocs,
 	deleteDoc,
-	doc,
+    doc,
+    query,
 	updateDoc,
-	setDoc,
 	Timestamp,
+	addDoc,
+    orderBy,
 } from 'firebase/firestore'
 import { Link } from 'react-router-dom'
 import $ from 'jquery'
@@ -16,7 +18,7 @@ import PrimaryButton from './../../components/PrimaryButton'
 import { useRef } from 'react'
 
 function AdminEventPage() {
-	const editEventForm = useRef()
+	const eventForm = useRef(HTMLFormElement)
 	const editEventSubmitBtn = useRef()
 	let [events, setEvents] = useState([
 		{
@@ -77,14 +79,9 @@ function AdminEventPage() {
 		let list = []
 
 		try {
-			let result = await getDocs(eventCollection)
+			let result = await getDocs(query(eventCollection, orderBy('startDate', 'desc')))
 			result.forEach((doc) => {
 				// 2022-06-09T22:00:00.000
-				console.log(
-					'FB Date',
-					doc.data().startDate.toDate().toISOString()
-				)
-
 				list.push({
 					id: doc.id,
 					dedicatedPageLink: doc.data().dedicatedPageLink,
@@ -92,11 +89,9 @@ function AdminEventPage() {
 					startDate: dateToDateTimeString(
 						doc.data().startDate.toDate()
 					),
-					endDate: doc
-						.data()
-						.endDate.toDate()
-						.toISOString()
-						.replace('Z', ''),
+					endDate: dateToDateTimeString(
+						doc.data().endDate.toDate()
+					),
 					startTime: doc
 						.data()
 						.startDate.toDate()
@@ -120,16 +115,18 @@ function AdminEventPage() {
 
 	const deleteEvent = async (event) => {
 		try {
-			if (window.confirm('Delete this event?'))
+			if (window.confirm('Delete this event?')) {
 				await deleteDoc(doc(firestore, eventCollection, event.id))
+				setEvents(events.filter((x) => x.id !== event.id))
+			}
 		} catch (err) {
 			alert(err.message)
 		}
 	}
 
-	const editEventSubmit = async (e) => {
+	const formSubmit = async (e) => {
 		e.preventDefault()
-		console.log(e.target[3].value)
+
 		try {
 			let newDoc = {
 				title: e.target[0].value,
@@ -142,9 +139,18 @@ function AdminEventPage() {
 				dedicatedPageLink: e.target[7].value,
 			}
 
-			// await updateDoc(doc(eventCollection, selectedEvent.id), newDoc)
+			if (selectedEvent) {
+				// update existing event
+				await updateDoc(doc(eventCollection, selectedEvent.id), newDoc)
+			} else {
+				// create new event
+				await addDoc(eventCollection, newDoc)
+			}
+
 			$('#editEventModal').modal('hide')
-			alert('UPDATED')
+			alert('SUCCESS')
+			eventForm.current.reset()
+			getEvents()
 		} catch (err) {
 			alert(err.message)
 			console.log(err)
@@ -162,9 +168,12 @@ function AdminEventPage() {
 				<PrimaryButton
 					data-bs-toggle="modal"
 					data-bs-target="#editEventModal"
-					onClick={() => setSelectedEvent(null)}
 					text={<i className="bi bi-plus" />}
 					color="blue"
+					onClick={() => {
+						setSelectedEvent(null)
+						eventForm.current.reset()
+					}}
 				/>
 			</p>
 			<br />
@@ -182,7 +191,10 @@ function AdminEventPage() {
 						className="edit-btn"
 						data-bs-toggle="modal"
 						data-bs-target="#editEventModal"
-						onClick={() => setSelectedEvent(event)}>
+                        onClick={() => {
+                            eventForm.current.reset()
+                            setSelectedEvent(event)
+                        }}>
 						Edit
 					</button>
 					<button
@@ -216,8 +228,9 @@ function AdminEventPage() {
 						</div>
 						<div className="modal-body">
 							<form
-								ref={editEventForm}
-								onSubmit={(e) => editEventSubmit(e)}>
+                                ref={eventForm}
+                                autoComplete="on"
+								onSubmit={(e) => formSubmit(e)}>
 								<div className="mb-3">
 									<label className="form-label">
 										Title *
@@ -234,7 +247,8 @@ function AdminEventPage() {
 									</label>
 									<input
 										className="form-control"
-										defaultValue={selectedEvent?.shortTitle}
+                                        defaultValue={selectedEvent?.shortTitle}
+                                        maxLength={40}
 										required
 									/>
 									<div className="form-text">
@@ -329,8 +343,6 @@ function AdminEventPage() {
 								<input
 									ref={editEventSubmitBtn}
 									type="submit"
-									name=""
-									id=""
 									hidden
 								/>
 							</form>

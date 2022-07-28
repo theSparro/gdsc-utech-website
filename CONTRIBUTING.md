@@ -10,12 +10,14 @@ You'll need the following to develop and test the project
 - Nodejs (with NPM) installed. https://nodejs.org/en/download/
 - VS Code Editor (recommended): https://code.visualstudio.com/download
   - ES7 React snippets extension (recommended)
+  - Prettier extension (recommended)
 
 ---
 
 ## Setup & Workflow
 1. Fork this repository to your GitHub account. This creates a copy of the repo on your profile
 2. Clone the project you forked onto your PC (`git clone your_repo_link`)
+3. Install any recommended extensions in vscode
 3. Switch to the dev branch (`git checkout dev`). Do not work on the main branch
 4. Run `npm install` to download all the dependencies to run the app
 4. Remember to do a `git pull` each day before you start coding so you can keep up with everyone elses changes
@@ -28,10 +30,11 @@ You'll need the following to develop and test the project
 ---
 ## Coding Style
 
+> **NOTE:** If you have the Prettier extension, your code should auto format when saved (Ctrl+S). Alternately you can run `npm run prettier` to format your code to the repository standard
 ### Readability
 - Put spaces on both sides of operators(*/-+=)
   - Bad: `let name="John"`, Good: `let name = "John"`
-- Skip lines between blocks of code
+- Skip lines between large blocks of code
   ``` js
   while (b < 9) {
 
@@ -42,7 +45,7 @@ You'll need the following to develop and test the project
   print(a)
   a = 0
   ```
-- Proper indentation
+- Proper indentation (use tabs preferably)
 - Use meaningful comments. Don't state the obvious
 - Don't use outdated HTML tags or attributes (center, font, etc)
 
@@ -98,7 +101,7 @@ We'll using be using SASS (Syntactically Awesome Stylesheets). It's exactly like
     
     * ✔ or ✅: when completing a task/ adding a feature
     * 🛠 or 🔧: when fixing an issue
-    * ❌: when removing files
+    * ❌: when removing files or features
 
 Example: `git commit -m "✅Finished creating database"`
 
