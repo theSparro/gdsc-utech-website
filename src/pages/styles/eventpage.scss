@@ -27,12 +27,21 @@
 // Upcoming events section
 .EventPage .upcoming {
 	align-items: center;
-	width: 80%;
+	width: 80vw;
 	margin: auto;
 
-	@media screen and (max-width: $mobile-size) {
-		flex-direction: column;
-		width: 95%;
+	// @media screen and (max-width: $mobile-size) {
+	// 	flex-direction: column;
+	// 	width: 95%;
+	// }
+
+	.list{
+		display: flex;
+		overflow: auto;
+
+		@media screen and (max-width: $mobile-size) {
+			flex-direction: column;
+		}
 	}
 }
 // Event box styling
@@ -43,13 +52,16 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	width: 80%;
-	min-width: 250px;
+	min-width: 45em;
+	margin-right: 1em;
 
 	// styles for mobile
 	@media screen and (max-width: $mobile-size) {
 		flex-direction: column;
+		min-width: 0;
 		width: 100%;
+		margin-right: 0;
+		margin-bottom: 1em;
 	}
 
 	.left {
