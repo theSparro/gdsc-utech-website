@@ -1,3 +1,5 @@
 {
-    "docwriter.hotkey.windows": "Alt + ."
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true
 }

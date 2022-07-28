@@ -2,14 +2,14 @@
 // import using @import '../../globals'; in your scss file
 
 // COLOR VARIABLES
-$google_blue: #4285F4;
-$google_blue_light: #9FC1F9;
-$google_green: #0F9D58;
-$google_yellow: #FBBC04;
-$google_red: #EA4335;
+$google_blue: #4285f4;
+$google_blue_light: #9fc1f9;
+$google_green: #0f9d58;
+$google_yellow: #fbbc04;
+$google_red: #ea4335;
 $text_gray: #9b9b9b;
 $text_black: #000629;
-$text_white: #FFFFFF;
+$text_white: #ffffff;
 $background_gray: #dddddd;
 
 // The Max screen size the website recognizes as a mobile device
@@ -18,48 +18,48 @@ $mobile-size: 700px;
 
 // GOOGLE SANS FONT
 @font-face {
-    font-family: 'Google Sans';
-    src: url(./fonts/googlesans-regular.woff) format('woff');
+	font-family: 'Google Sans';
+	src: url(./fonts/googlesans-regular.woff) format('woff');
 }
 @font-face {
-    font-family: 'Google Sans';
-    src: url(./fonts/googlesans-bold.woff) format('woff');
-    font-weight: bold;
+	font-family: 'Google Sans';
+	src: url(./fonts/googlesans-bold.woff) format('woff');
+	font-weight: bold;
 }
 
 // BASE STYLES
-#root, html{
-    height: 100%;
-    scroll-behavior: smooth; //makes internal links scroll instead of jump to the element
+#root,
+html {
+	height: 100%;
+	scroll-behavior: smooth; //makes internal links scroll instead of jump to the element
 }
 body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Google Sans', Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	height: 100%;
+	margin: 0;
+	font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #4285f4 #ffffff;
-  }
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #4285f4 #ffffff;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
+*::-webkit-scrollbar-track {
+	background: #ffffff;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #4285f4;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
-  }
+*::-webkit-scrollbar-thumb {
+	background-color: #4285f4;
+	border-radius: 10px;
+	border: 3px solid #ffffff;
+}
