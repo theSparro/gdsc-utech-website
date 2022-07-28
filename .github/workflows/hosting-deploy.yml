@@ -22,7 +22,7 @@ jobs:
       - name: Install and Build
         env:
           CI: false
-        run: npm ci && npm run build
+        run: npm install && npm run build
       
       - name: Deploy Hosting
         uses: w9jds/firebase-action@master
