@@ -59,19 +59,22 @@ function ProjectsPage() {
 
 				<a
 					target="_blank"
-					href="https://github.com/gdsc-utech/Flutter-login-google">
+					href="https://github.com/gdsc-utech/Flutter-login-google"
+					rel="noreferrer">
 					flutter google login
 				</a>
 				<br />
 				<a
 					target="_blank"
-					href="https://github.com/gdsc-utech/firebase-auth-demo">
+					href="https://github.com/gdsc-utech/firebase-auth-demo"
+					rel="noreferrer">
 					firebase authentication
 				</a>
 				<br />
 				<a
 					target="_blank"
-					href="https://www.youtube.com/watch?v=JgsZDxuQLzY&t=25s">
+					href="https://www.youtube.com/watch?v=JgsZDxuQLzY&t=25s"
+					rel="noreferrer">
 					flutter apps
 				</a>
 				<br />

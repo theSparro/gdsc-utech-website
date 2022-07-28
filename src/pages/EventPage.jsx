@@ -77,7 +77,7 @@ function EventPage() {
 					id="gdsc-page"
 					target="_blank"
 					href="https://gdsc.community.dev/university-of-technology"
-					rel="noopener">
+					rel="noreferrer">
 					View Events On Our Community Page
 				</a>
 			</div>
